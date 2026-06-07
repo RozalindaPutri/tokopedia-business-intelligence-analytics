@@ -1,0 +1,26 @@
+USE master;
+GO
+
+CREATE LOGIN [NT Service\MSOLAP$SQL2019] FROM WINDOWS;
+GO
+
+USE DW_Tokopedia;
+GO
+
+CREATE USER [NT Service\MSOLAP$SQL2019] FOR LOGIN [NT Service\MSOLAP$SQL2019];
+GO
+
+ALTER ROLE db_datareader ADD MEMBER [NT Service\MSOLAP$SQL2019];
+GO
+
+USE DW_Tokopedia;
+GO
+
+ALTER ROLE db_datareader ADD MEMBER [NT Service\MSOLAP$SQL2019];
+GO
+
+USE DW_Tokopedia;
+GO
+
+ALTER ROLE db_datareader ADD MEMBER [NT Service\MSOLAP$SQL2019];
+GO

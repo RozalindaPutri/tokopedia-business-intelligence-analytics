@@ -1,0 +1,23 @@
+﻿Build started at 09:22...
+------ Build started: Project: Tokopedia_OLAP, Configuration: Development ------
+Started Building Analysis Services project: Incremental ....
+Dimension [Dim Date] : Create hierarchies in non-parent child dimensions.
+Dimension [Dim Product] : Create hierarchies in non-parent child dimensions.
+Dimension [Dim Payment] : Create hierarchies in non-parent child dimensions.
+Cube [Tokopedia_Cube] : The 'Fact Order Status' and 'Fact Sales' measure groups have the same dimensionality and granularity. Consider unifying them to improve performance.
+Database [Tokopedia_OLAP] : The database has no Time dimension. Consider creating one.
+Build complete -- 0 errors, 5 warnings
+------ Deploy started: Project: Tokopedia_OLAP, Configuration: Development ------
+Performing an incremental deployment of the 'Tokopedia_OLAP' database to the 'localhost\SQL2019' server.
+Generating deployment script...
+   Add DataSourceView DSV_Tokopedia
+   Add Cube Tokopedia_Cube
+   Process Database Tokopedia_OLAP
+Done
+Sending deployment script to the server...
+Done
+Deploy complete -- 0 errors, 0 warnings
+========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========
+========== Build completed at 09:22 and took 09,351 seconds ==========
+========== Deploy: 1 succeeded, 0 failed, 0 skipped ==========
+========== Deploy completed at 09:22 and took 09,351 seconds ==========
